@@ -1,0 +1,28 @@
+{
+  "name": "reweex",
+  "version": "0.1.0",
+  "description": "A redux wrapper for webextensions",
+  "keywords": ["redux", "store", "react", "webextension", "extension", "webext", "reweex", "chrome", "firefox", "typescript", "types", "typing"],
+  "main": "dist/bundles/reweex.min.js",
+  "types": "dist/lib/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && npm run build:dev && npm run build:prod",
+    "build:dev": "webpack --display-error-details --progress --colors",
+    "build:prod": "webpack --config webpack.config.prod.js --display-error-details --progress --colors"
+  },
+  "author": "Nils-Börge Margotti",
+  "license": "GPL-3.0-only",
+  "devDependencies": {
+    "@types/redux": "^3.6.0",
+    "rimraf": "^2.6.3",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.2.4",
+    "web-ext-types": "^3.1.0",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
+  },
+  "peerDependencies": {
+    "redux": "^4.0.1"
+  }
+}

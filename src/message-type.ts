@@ -1,0 +1,5 @@
+export enum MessageType {
+    CLIENT_UPDATE = '@@CLIENT_UPDATE',
+    REQ_CLIENT_UPDATE = '@@REQ_CLIENT_UPDATE',
+    DISPATCH = '@@DISPATCH',
+}
