@@ -1,6 +1,7 @@
 # reweex
 
 [![Build Status](https://img.shields.io/travis/Nols1000/reweex.svg?style=flat-square)](https://travis-ci.org/Nols1000/reweex)
+[![Code Coverage](https://img.shields.io/coveralls/github/Nols1000/reweex.svg?style=flat-square)](https://coveralls.io/github/Nols1000/reweex)
 [![NPM Version](https://img.shields.io/npm/v/reweex.svg?style=flat-square)](https://www.npmjs.com/package/reweex)
 
 reweex is a redux wrapper for webextensions. It uses the messaging system of the webextension-API to make redux stores available in all parts of a webextension.
