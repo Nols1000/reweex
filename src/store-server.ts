@@ -49,8 +49,6 @@ export class StoreServer<S = any, A extends Action = AnyAction> implements Store
             }
         } else if (message.type === MessageType.REQ_CLIENT_UPDATE) {
             sendResponse(this.getState());
-        } else {
-
         }
     }
 

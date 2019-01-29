@@ -2,19 +2,36 @@
   "name": "reweex",
   "version": "0.1.0",
   "description": "A redux wrapper for webextensions",
-  "keywords": ["redux", "store", "react", "webextension", "extension", "webext", "reweex", "chrome", "firefox", "typescript", "types", "typing"],
+  "keywords": [
+    "redux",
+    "store",
+    "react",
+    "webextension",
+    "extension",
+    "webext",
+    "reweex",
+    "chrome",
+    "firefox",
+    "typescript",
+    "types",
+    "typing"
+  ],
   "main": "dist/bundles/reweex.min.js",
   "types": "dist/lib/index.d.ts",
   "scripts": {
-    "clean": "rimraf dist",
     "build": "npm run clean && npm run build:dev && npm run build:prod",
     "build:dev": "webpack --display-error-details --progress --colors",
-    "build:prod": "webpack --config webpack.config.prod.js --display-error-details --progress --colors"
+    "build:prod": "webpack --config webpack.config.prod.js --display-error-details --progress --colors",
+    "clean": "rimraf dist",
+    "coverage": "jest --coverage",
+    "test": "jest"
   },
   "author": "Nils-Börge Margotti",
   "license": "GPL-3.0-only",
   "devDependencies": {
     "@types/redux": "^3.6.0",
+    "jest": "^24.0.0",
+    "jest-webextension-mock": "^3.5.0",
     "rimraf": "^2.6.3",
     "ts-loader": "^5.3.3",
     "typescript": "^3.2.4",
@@ -24,5 +41,9 @@
   },
   "peerDependencies": {
     "redux": "^4.0.1"
+  },
+  "dependencies": {
+    "@types/jest": "^23.3.13",
+    "ts-jest": "^23.10.5"
   }
 }
