@@ -1,0 +1,19 @@
+language: node_js
+
+node_js:
+  - stable
+  - '6'
+  - '4'
+
+script:
+  - npm run build
+
+deploy:
+  - provider: npm
+    skip_cleanup: true
+    email: nilsmargotti@gmail.com
+    api_key:
+      secure: kmgoKTOTyTLJ1TOmoU+DXJcbk+QE5fDA7ZubpoF+QQaJSAeItDnnqwS6OK0Yb+KjNFdxgRDOTLVpTb1JRv3q8Fsbr4yVQBB91GmDF6maU8Do/Ne3edL5fgF6zue+foMAWqTLqe+8hfUmyHKuelFx5UIopCd8NXjGJcO+LK2Vp1og6Vg8Xd4xxEpxJGbS9unJNDGSWd8QlR40U1P6urchAvZ01No5G5i5OkTeJw8lFbBImxEA7zRGuqD4VksNBr5yriNrzWojf6bWL/cgZ4w2Tf5N9xGpBg+uB6xF9n7M/F1mHk5CCTBHhVHw7WEyZEXqPoe8VIq9sAdZWbIFIPDdoKHJl9Hjw9ZM+aESS8/Q2AKsi842aJEJmep4aFHmPgpt8nRStMy+6cfixVpXFGQAOeryHTkLyWSUlUdQi/mJhcEwrNpNuUWcX4QjzZVH4Ss/aCQXNM1p3fkUno5UH+mt2S8bjw7y8WxeCGtEOOAQ5ipl9hN21hmp3vXTLVwE8yY36Xt2HJc2OPASZQXcxC5PzS2v4UsHtICahpttQU6eQmZmDmiZ5fsXiHm8U4GblP4yWE6hGxu6WeGW+hts28A0HgmTE7S+Yjrg4X4sBhnAAnaHED8vB5L8+U4IZs/3WdatQIfLWaGh1fhssdfW8GHlT51hp7mPDHlddi7cfpbQ0jU=
+    on:
+      tags: true
+      repo: Nols1000/reweex
