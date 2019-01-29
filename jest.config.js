@@ -17,4 +17,8 @@ module.exports = {
     "setupFiles": [
       "jest-webextension-mock"
     ],
+    "coverageReporters": [
+      "lcov",
+      "text"
+    ],
   }
