@@ -1,6 +1,6 @@
 # reweex
 
-[![Build Status](https://img.shields.io/travis/Nols1000/reweex.svg?style=flat-square)](https://travis-ci.org/Nols1000/reweex)
+[![Build Status](https://img.shields.io/travis/Nols1000/reweex.svg?style=flat-square)](https://app.travis-ci.com/Nols1000/reweex)
 [![Code Coverage](https://img.shields.io/coveralls/github/Nols1000/reweex.svg?style=flat-square)](https://coveralls.io/github/Nols1000/reweex)
 [![NPM Version](https://img.shields.io/npm/v/reweex.svg?style=flat-square)](https://www.npmjs.com/package/reweex)
 
